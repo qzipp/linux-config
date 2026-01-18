@@ -1,0 +1,92 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/logo.txt",
+    // "type": "small",
+    "padding": {
+      "left": 2,
+      "top": 1
+    },
+    "color": {
+      "1": "green",
+      "2": "magenta",
+      "3": "dim_",
+      "4": "light_magenta"
+    }
+  },
+
+  "modules": [
+    {
+      "type": "title",
+      "key": " ",
+      "keyColor": "magenta",
+      "temp": true,
+      "format": "{#magenta}{1}{#}@{#green}{2}{#}"
+    },
+    {
+      "type": "cpu",
+      "key": "cpu",
+      "keyColor": "magenta",
+      "temp": true,
+      "format": "{1} - {8}"
+    },
+    {
+      "type": "gpu",
+      "key": "gpu",
+      "keyColor": "magenta",
+      "temp": true,
+      "format": "{2:24} - {4}"
+    },
+    {
+      "type": "memory",
+      "key": "mem",
+      "keyColor": "magenta",
+      "format": "{1} / {2} - {3}"
+    },
+    {
+      "type": "disk",
+      "key": "{}",
+      "keyColor": "green",
+      "format": "{1} / {2} ({3})"
+    },
+    {
+      "type": "battery",
+      "key": "battery",
+      "keyColor": "magenta",
+      "format": "{4}"
+    },
+    {
+      "type": "uptime",
+      "key": "up",
+      "keyColor": "magenta",
+      "format": "{1}d {2}h {3}m {4}s"
+    },
+    {
+      "type": "wm",
+      "key": "wm",
+      "keyColor": "magenta",
+      "format": "{2} {5} ({3})"
+    },
+    // "os",
+    // "host",
+    // "kernel",
+    //"packages",
+    // "shell",
+    // "display",
+    //"de",
+    //"wmtheme",
+    //"theme",
+    //"icons",
+    //"font",
+    //"cursor",
+    // "terminal",
+    //"terminalfont",
+    //"swap",
+    // "disk",
+    // "localip",
+    // "poweradapter",
+    // "locale",
+    // "break",
+    // "colors"
+  ]
+}
